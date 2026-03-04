@@ -41,7 +41,7 @@ def parse_arguments():
 # @section 2. Inicialización de SparkSession con tuning de recursos
 # =============================================================================
 
-def create_spark_session(args, app_name="ProcesoFunctional-LlanosBardales"):
+def create_spark_session(args, app_name="ProcesoFunctional-MondragonDelgadoMaycol"):
     """
     Crea SparkSession con configuración optimizada equivalente a tuning Hive/MR
     """

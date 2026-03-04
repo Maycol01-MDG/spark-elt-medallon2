@@ -29,7 +29,7 @@ def parse_arguments():
 # @section 2. Inicialización de SparkSession con configuración Hive/Parquet
 # =============================================================================
 
-def create_spark_session(app_name="ProcesoCurated-LlanosBardales"):
+def create_spark_session(app_name="ProcesoCurated-MondragonDelgadoMaycol"):
     return SparkSession.builder \
         .appName(app_name) \
         .enableHiveSupport() \

@@ -22,7 +22,7 @@ def parse_arguments():
     parser.add_argument('--env', type=str, default='TopicosB', help='Entorno: DEV, QA, PROD')
     parser.add_argument('--username', type=str, default='hadoop', help='Usuario HDFS')
     parser.add_argument('--base_path', type=str, default='/user', help='Ruta base en HDFS')
-    parser.add_argument('--schema_path', type=str, default='/user/hadoop/datalake/schema', help='Ruta de esquemas AVRO')
+    parser.add_argument('--schema_path', type=str, default='/user/hadoop/spark-elt-medallon-main/schema', help='Ruta de esquemas AVRO')
     parser.add_argument('--source_db', type=str, default='workload', help='Base de datos origen')
     return parser.parse_args()
 
@@ -30,7 +30,7 @@ def parse_arguments():
 # @section 2. Inicialización de SparkSession con configuración Hive/AVRO
 # =============================================================================
 
-def create_spark_session(app_name="ProcesoLanding-LlanosBardales"):
+def create_spark_session(app_name="ProcesoLanding-MondragonDelgadoMaycol"):
     return SparkSession.builder \
         .appName(app_name) \
         .enableHiveSupport() \

@@ -19,14 +19,14 @@ def parse_arguments():
     parser.add_argument('--env', type=str, default='TopicosB', help='Entorno: DEV, QA, PROD')
     parser.add_argument('--username', type=str, default='hadoop', help='Usuario HDFS')
     parser.add_argument('--base_path', type=str, default='/user', help='Ruta base en HDFS')
-    parser.add_argument('--local_data_path', type=str, default='file:/home/hadoop/spark-elt-medallon/dataset', help='Ruta local de datos')
+    parser.add_argument('--local_data_path', type=str, default='file:/home/hadoop/spark-elt-medallon-main/dataset', help='Ruta local de datos')
     return parser.parse_args()
 
 # =============================================================================
 # @section 2. Inicialización de SparkSession con soporte Hive
 # =============================================================================
 
-def create_spark_session(app_name="Proceso_Carga_Workload-LlanosBardales"):
+def create_spark_session(app_name="Proceso_Carga_Workload-MondragonDelgadoMaycol"):
     return SparkSession.builder \
         .appName(app_name) \
         .enableHiveSupport() \

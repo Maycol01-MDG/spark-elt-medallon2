@@ -12,7 +12,7 @@ spark = SparkSession.builder \
 df = spark.read \
     .option("header", "true") \
     .option("inferSchema", "true") \
-    .csv("file:/home/hadoop/spark-elt-medallon/datalake/temp/part-*.csv")
+    .csv("file:/home/hadoop/spark-elt-medallon-main/datalake/temp/part-*.csv")
     #.csv("file:/home/hadoop/spark-elt-medallon/datalake/gold.csv")
 
 # Mostrar esquema

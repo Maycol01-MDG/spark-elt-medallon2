@@ -14,7 +14,7 @@ table = "transaccion_enriquecida"
 df = spark.table(f"{database}.{table}")
 
 # Ruta dentro de tu proyecto (WSL)
-output_path = "file:/home/hadoop/spark-elt-medallon/datalake/temp"
+output_path = "file:/home/hadoop/sspark-elt-medallon-main/datalake/temp"
 
 # Guardar como CSV
 df.coalesce(1) \
